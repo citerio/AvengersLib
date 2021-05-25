@@ -22,12 +22,16 @@ How to use it:
 3. Open MainActivity class and add the snippet below to show the Floating Action Button on the screen:
 
     /* first we get the FAB from the avenger_float_button layout */
+    
     val child =  View.inflate(this, com.citerio.avengerslib.R.layout.avenger_float_button, null) as ConstraintLayout
+    
 
     /* and then we add it to the root view of our MainActivity layout */
+    
     root.addView(child)
 
     /* In this example, our root view is a ConstraintLayout, so we need to set the constraints of our FAB layout */
+    
     val set = ConstraintSet()
     set.clone(root)
     set.connect(child.id, ConstraintSet.BOTTOM, root.id, ConstraintSet.BOTTOM)
@@ -38,6 +42,7 @@ How to use it:
 
 
     /* Once we set up the constraints for the FAB layout, we add the OnClickListener event, which calls the showPopUp method */
+    
     child.findViewById<FloatingActionButton>(com.citerio.avengerslib.R.id.open_popup_button).setOnClickListener {
           com.citerio.avengerslib.Notifications.showPopUp(this@MainActivity)
     }
