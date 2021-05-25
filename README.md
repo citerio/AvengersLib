@@ -33,11 +33,17 @@ How to use it:
     /* In this example, our root view is a ConstraintLayout, so we need to set the constraints of our FAB layout */
     
     val set = ConstraintSet()
+
     set.clone(root)
+
     set.connect(child.id, ConstraintSet.BOTTOM, root.id, ConstraintSet.BOTTOM)
+
     set.connect(child.id, ConstraintSet.TOP, root.id, ConstraintSet.TOP)
+
     set.connect(child.id, ConstraintSet.END, root.id, ConstraintSet.END)
+
     //set.connect(child.id, ConstraintSet.START, root.id, ConstraintSet.START)
+    
     set.applyTo(root)
 
 
