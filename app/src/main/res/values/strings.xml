@@ -1,0 +1,8 @@
+<resources>
+    <string name="libray_installed">Library Installed on 05 Mar 21</string>
+    <string name="install_date">Library Installed on 05 Mar 21</string>
+    <string name="current_time_header">Current Time:</string>
+    <string name="join_us"><J>JOIN US</J></string>
+    <string name="thank_you">Thank you</string>
+    <string name="app_name">AvengersLib</string>
+</resources>
